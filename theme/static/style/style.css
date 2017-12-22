@@ -308,7 +308,6 @@ pre code {
     cursor: pointer;
 }
 
-
 .arrow-right {
     display: block;
     position: relative;
@@ -365,6 +364,21 @@ pre code {
 
 @media screen and (max-width: 991px){
     /* For tablets: */
+    /*navigation section*/
+    .topnav .col-4 img{
+        margin-top: 12.5px;
+        max-width: 200px;
+    }
+    .topnav .col-8 li{
+        display: none;
+    }
+    .topnav .col-8 li:last-child{
+        display: block;
+    }
+    .topnav .open-menu{
+        display: inline-block;
+    }
+
     /*about section*/
     .about-intro {
         padding-left:  1.8rem;
@@ -436,7 +450,34 @@ pre code {
 }
 
 @media screen and (max-width: 767px){
-    /* For mobile phones: */
+    /* For mobile phones: */    
+    /*navigation section*/
+    .topnav .col-4 img{
+        margin-top: 12.5px;
+        max-width: 200px;
+    }
+    .topnav .col-8 li{
+        display: none;
+    }
+    .topnav .col-8 li:last-child{
+        display: block;
+    }
+    .topnav .open-menu{
+        display: inline-block;
+    }
+
+    /*header section*/
+    .header .col-7{
+        display: none;
+    }
+    .header .col-5{
+        width: 100%;
+    }
+    .header .header-btns{
+        margin-top: 50px;
+        text-align: center;
+    }
+
     /*about section*/
     .about-intro {
         padding-left:  1.8rem;
@@ -495,4 +536,15 @@ pre code {
     .features .demo-btn {
         margin-bottom: 1.8rem;
     }
+}
+
+
+/*
+    Hiding the "Loading" text that appears
+    on the bottom of the screen, caused by
+    the jQuery Mobile scripts.
+*/
+
+.ui-loader {
+    display: none;
 }
